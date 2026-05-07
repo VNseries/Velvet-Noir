@@ -3,194 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Chicago Docket — S.P. Carter</title>
+    <title>The Chicago Docket — Translations</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
-            font-family: 'Georgia', serif;
+            font-family: Georgia, serif;
             background: #0a0a0a;
             color: #e8e8e8;
             min-height: 100vh;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 60px 24px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .header h1 {
-            font-size: 2.4rem;
-            font-weight: normal;
-            letter-spacing: 0.02em;
-            color: #ffffff;
-            margin-bottom: 8px;
-        }
-
-        .header .subtitle {
-            font-size: 1.1rem;
-            color: #7eb8d4;
-            font-style: italic;
-        }
-
-        .header .author {
-            margin-top: 16px;
-            font-size: 0.95rem;
-            color: #888;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .divider {
-            width: 60px;
-            height: 1px;
-            background: #7eb8d4;
-            margin: 40px auto;
-        }
-
-        .book-section {
-            margin-bottom: 48px;
-        }
-
-        .book-section h2 {
-            font-size: 1.3rem;
-            font-weight: normal;
-            color: #ffffff;
-            margin-bottom: 6px;
-        }
-
-        .book-section .book-subtitle {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 20px;
-        }
-
-        .downloads {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-        }
-
-        .download-link {
-            display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 14px 20px;
-            background: #151515;
-            border: 1px solid #2a2a2a;
+            padding: 60px 20px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+        .series {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 40px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .downloads {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            width: 100%;
+            max-width: 420px;
+        }
+        .download-link {
+            display: block;
+            padding: 20px 28px;
+            background: #1a1a1a;
+            border: 1px solid #333;
             border-radius: 6px;
             text-decoration: none;
             color: #e8e8e8;
-            transition: border-color 0.2s, background 0.2s;
+            transition: all 0.2s ease;
         }
-
         .download-link:hover {
-            border-color: #7eb8d4;
-            background: #1a1a1a;
+            background: #222;
+            border-color: #4a9ebb;
+            transform: translateY(-1px);
         }
-
-        .download-link .label {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+        .lang-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 4px;
         }
-
-        .download-link .flag {
-            font-size: 1.3rem;
+        .lang-native {
+            font-size: 0.9rem;
+            color: #999;
         }
-
-        .download-link .lang {
-            font-size: 0.95rem;
-        }
-
-        .download-link .format {
-            font-size: 0.8rem;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 30px;
-            border-top: 1px solid #1a1a1a;
-        }
-
-        .footer p {
-            font-size: 0.85rem;
+        .file-info {
+            font-size: 0.75rem;
             color: #555;
+            margin-top: 6px;
         }
-
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #555;
+            font-size: 0.8rem;
+            line-height: 1.8;
+        }
         .footer a {
-            color: #7eb8d4;
+            color: #4a9ebb;
             text-decoration: none;
         }
-
         .footer a:hover {
             text-decoration: underline;
-        }
-
-        .note {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #666;
-            font-style: italic;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 480px) {
-            .header h1 { font-size: 1.8rem; }
-            .container { padding: 40px 16px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>The Chicago Docket</h1>
-            <div class="subtitle">Velvet Noir Series</div>
-            <div class="author">S.P. Carter</div>
-        </div>
+    <div class="series">Velvet Noir Series</div>
+    <h1>The Chicago Docket</h1>
+    <p class="subtitle">Book One — Available in 4 Languages</p>
 
-        <div class="divider"></div>
+    <div class="downloads">
+        <a class="download-link" href="TheChicagoDocket_Book1.docx" download>
+            <div class="lang-name">English</div>
+            <div class="lang-native">Original</div>
+            <div class="file-info">.docx format</div>
+        </a>
+        <a class="download-link" href="TheChicagoDocket_Book1_Ukrainian.docx" download>
+            <div class="lang-name">Ukrainian</div>
+            <div class="lang-native">Українська</div>
+            <div class="file-info">.docx format</div>
+        </a>
+        <a class="download-link" href="TheChicagoDocket_Book1_Russian.docx" download>
+            <div class="lang-name">Russian</div>
+            <div class="lang-native">Русский</div>
+            <div class="file-info">.docx format</div>
+        </a>
+        <a class="download-link" href="TheChicagoDocket_Book1_Romanian.docx" download>
+            <div class="lang-name">Romanian</div>
+            <div class="lang-native">Română</div>
+            <div class="file-info">.docx format</div>
+        </a>
+    </div>
 
-        <!-- Book 1 -->
-        <div class="book-section">
-            <h2>Book 1 — The Chicago Docket</h2>
-            <div class="book-subtitle">Julian &amp; Elena</div>
-            <div class="downloads">
-                <a href="TheChicagoDocket_Book1.docx" class="download-link" download>
-                    <div class="label">
-                        <span class="flag">&#127468;&#127463;</span>
-                        <span class="lang">English</span>
-                    </div>
-                    <span class="format">DOCX</span>
-                </a>
-                <a href="TheChicagoDocket_Book1_Russian.docx" class="download-link" download>
-                    <div class="label">
-                        <span class="flag">&#127479;&#127482;</span>
-                        <span class="lang">Русский</span>
-                    </div>
-                    <span class="format">DOCX</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="note">
-            More languages and books coming soon.
-        </div>
-
-        <div class="footer">
-            <p>Contact: <a href="mailto:VNseries@proton.me">VNseries@proton.me</a></p>
-        </div>
+    <div class="footer">
+        <p>S.P. Carter</p>
+        <p><a href="mailto:VNseries@proton.me">VNseries@proton.me</a></p>
+        <p><a href="https://www.amazon.com/dp/B0GX2WYJY6">Available on Amazon</a></p>
     </div>
 </body>
 </html>
